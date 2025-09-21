@@ -1,3 +1,5 @@
+package br.edu.SistemaVeiculos.modelos;
+
 public class Moto extends Veiculos {
 
     private String tipo;
@@ -13,6 +15,23 @@ public class Moto extends Veiculos {
         System.out.println("Tipo de moto: " + tipo);
     }
 
+    @Override
+    public void mover() {
+        System.out.println("A moto está acelerando na pista.");
+    }
+
+    @Override
+    public void parar() {
+        System.out.println("A moto parou e está apoiada no descanso.");
+    }
+
+    @Override
+    public String toString() {
+        return "Moto{" +
+                "tipo='" + tipo + '\'' +
+                '}';
+    }
+
     public String getTipo() {
         return tipo;
     }
@@ -20,5 +39,4 @@ public class Moto extends Veiculos {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
 }
