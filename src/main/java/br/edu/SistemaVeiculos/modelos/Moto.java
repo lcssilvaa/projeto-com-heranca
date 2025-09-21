@@ -8,8 +8,8 @@ public class Moto extends Veiculos {
     }
 
     @Override
-    public void exibirInfo() {
-        super.exibirInfo();
+    public void exibirInfos() {
+        super.exibirInfos();
         System.out.println("Tipo de moto: " + tipo);
     }
 
@@ -20,4 +20,5 @@ public class Moto extends Veiculos {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
 }
